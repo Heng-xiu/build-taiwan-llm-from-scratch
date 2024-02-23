@@ -17,6 +17,6 @@ cd tokenizer
 # refer: https://huggingface.co/docs/transformers/main/main_classes/deepspeed#zero3-config
 # refer: https://note.com/npaka/n/n26a587be962d
 # refer: https://discuss.huggingface.co/t/customized-tokenization-files-in-run-clm-script/21460/3
-python spm_tokenize.py
+python spm_tokenizer.py
 
 cd ../

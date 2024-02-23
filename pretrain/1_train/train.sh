@@ -18,8 +18,6 @@
 # refer: https://huggingface.co/docs/transformers/main/main_classes/deepspeed#zero3-config
 # refer: https://note.com/npaka/n/n26a587be962d
 # refer: https://discuss.huggingface.co/t/customized-tokenization-files-in-run-clm-script/21460/3
-deepspeed --no_local_rank run_clm.py hf_config.json --deepspeed --deepspeed_config ds_config_zero3.json 
+!deepspeed --no_local_rank 1_train/run_clm.py 1_train/hf_config.json --deepspeed --deepspeed_config 1_train/ds_config_zero3.json
 
 # cd ../
-
-

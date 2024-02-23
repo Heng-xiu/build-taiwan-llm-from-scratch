@@ -1,8 +1,8 @@
 {
-    "model_type": "gpt2",
-    "config_name":"gpt2-medium" ,
+    "model_type": "mistral",
+    "config_name":"1_train/mistral-300m/config.json" ,
     "tokenizer_name":"p208p2002/llama-traditional-chinese-120M" ,
-    "train_file":"../wiki.txt",
+    "train_file":"wiki.txt",
     "validation_split_percentage":5,
     "output_dir":"checkpoints-mistral-300M-FA2",
     "do_train":true,
@@ -32,6 +32,7 @@
     "gradient_accumulation_steps":64 ,
     "push_to_hub":false,
     "dataloader_num_workers": 8,
-    "optim":"adamw_bnb_8bit" ,
-    "torch_compile":true
+    "optim":"adamw_bnb_8bit",
+    "torch_compile":true,
+    "overwrite_output_dir": true
 }

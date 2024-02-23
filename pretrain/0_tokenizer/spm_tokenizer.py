@@ -23,17 +23,17 @@ def main():
         model_prefix='zh_wiki_bpe_model_sp/zh_wiki_bpe_hf',
         user_defined_symbols=["，","。","：","？","（","）","「","」"],
         max_sentence_length=2048,
-        max_sentencepiece_length=4,
         split_digits=True,
         model_type="bpe",
         byte_fallback=True,
         train_extremely_large_corpus=True,
         vocab_size=50000,
-        shuffle_input_sentence=False,
         split_by_unicode_script=True,
         allow_whitespace_only_pieces=True,
         remove_extra_whitespaces=False,
-        normalization_rule_name="nfkc",
+        normalization_rule_name="nmt_nfkc_cf",
+        input_sentence_size=12000000,
+        shuffle_input_sentence=True
     )
 
     # makes segmenter instance and loads the model file (m.model)
